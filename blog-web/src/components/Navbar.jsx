@@ -18,7 +18,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className='bg-gradient-to-r from-blue-500 via-purple-500 to-red-700 fixed right-0 left-0 top-0'>
+        <header className='bg-gradient-to-r from-blue-500 via-purple-500 to-red-700 fixed right-0 left-0 top-0 z-50 h-14'>
             <nav className="px-4 py-2 max-w-7xl mx-auto flex justify-between items-center">
                 {/* Logo */}
                 <a href="/" className="classname-logo text-2xl font-bold text-white">
