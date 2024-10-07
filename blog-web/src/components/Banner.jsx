@@ -4,8 +4,8 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Banner = () => {
   return (
-    <div className='px-4 py-32 text-white mx-auto pt-16'>
-        <div className='text-center'>
+    <div className='px-4 py-32 mx-auto pt-16'>
+        <div className='text-center text-white'>
             <h1 className='text-5xl font-bold py-2'>Welcome to the Blog</h1>
             <p className='opacity-70 py-2 mx-auto'>Welcome to our blog, a space where we explore insightful ideas, innovative trends, and practical tips across a wide range of topics.
                 Whether you're a tech enthusiast looking to stay ahead of the latest industry advancements, a creative professional seeking inspiration, or someone eager to enhance their lifestyle, our blog has something for you. 
