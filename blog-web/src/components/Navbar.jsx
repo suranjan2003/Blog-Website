@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; // Import useState for mobile menu state management
 import { Link, useLocation } from 'react-router-dom';
-import { FaFacebook, FaGlobe, FaSquareGithub, FaBars, FaXmark } from "react-icons/fa6";
+import { FaBars, FaXmark } from "react-icons/fa6";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
     const navItems = [
@@ -49,21 +50,26 @@ const Navbar = () => {
                     </ul>
 
                     {/* Icons */}
-                    <div className='flex space-x-4 px-4 text-white'>
-                        <div className='hover:text-yellow-400'>
-                            <FaFacebook />
-                        </div>
-                        <div className='hover:text-yellow-400'>
-                            <FaGlobe />
-                        </div>
-                        <div className='hover:text-yellow-400'>
-                            <FaSquareGithub />
+                    <div>
+                        <div className='flex space-x-4'>
+                        <a href='https://facebook.com' className='text-gray-400 hover:text-gray-200' target="_blank" rel="noopener noreferrer">
+                            <FaFacebook className="inline-block" />
+                        </a>
+                        <a href='https://twitter.com' className='text-gray-400 hover:text-gray-200' target="_blank" rel="noopener noreferrer">
+                            <FaTwitter className="inline-block" />
+                        </a>
+                        <a href='https://linkedin.com' className='text-gray-400 hover:text-gray-200' target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin className="inline-block" />
+                        </a>
+                        <a href='https://instagram.com' className='text-gray-400 hover:text-gray-200' target="_blank" rel="noopener noreferrer">
+                            <FaInstagram className="inline-block" />
+                        </a>
                         </div>
                     </div>
 
-                    {/* Login Button */}
+                    {/* Login Button - Right Most Position */}
                     <button 
-                        className='bg-yellow-400 px-4 py-2 rounded-lg text-black hover:bg-gray-200 transition-all duration-200 ease-in'
+                        className='ml-auto bg-yellow-400 px-4 py-2 rounded-lg text-black hover:bg-gray-200 transition-all duration-200 ease-in'
                     >
                         Login
                     </button>
@@ -84,6 +90,14 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         ))}
+                        {/* Add Login Button in Mobile Menu if desired */}
+                        <li>
+                            <button 
+                                className='bg-yellow-400 px-4 py-2 rounded-lg text-black hover:bg-gray-200 transition-all duration-200 ease-in text-left'
+                            >
+                                Login
+                            </button>
+                        </li>
                     </ul>
                 </div>
             )}
@@ -92,3 +106,4 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
